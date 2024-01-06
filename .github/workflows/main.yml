@@ -16,7 +16,7 @@ jobs:
     - name: Set Reminder
       run: |
         # Mocking current date and time for testing purposes
-        export CURRENT_DATE=$(date -u +"%Y-%m-%dT16:06:00Z")
+        export CURRENT_DATE=$(date -u +"%Y-%m-%dT16:10:00Z")
 
         # Extracting due date from the issue (replace with your logic)
         DUE_DATE=$(curl -sH "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
